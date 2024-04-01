@@ -41,6 +41,9 @@
 
 Projeto executado por meio da plataforma da DIO de autoria da Camila Cavalcante
 
+Link do repositório original: https://github.com/cami-la/credit-application-system.git
+
 [![Linkedin Badge](https://img.shields.io/badge/-Camila-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/cami-la/)](https://www.linkedin.com/in/cami-la/)
+
 
 

@@ -24,7 +24,6 @@ import java.util.*
 class CustomerServiceTest {
   @MockK lateinit var customerRepository: CustomerRepository
   @InjectMockKs lateinit var customerService: CustomerService
-
   @Test
   fun `should create customer`(){
     //given
@@ -37,7 +36,6 @@ class CustomerServiceTest {
     Assertions.assertThat(actual).isSameAs(fakeCustomer)
     verify(exactly = 1) { customerRepository.save(fakeCustomer) }
   }
-
   @Test
   fun `should find customer by id`() {
     //given
@@ -79,17 +77,15 @@ class CustomerServiceTest {
     verify(exactly = 1) { customerRepository.findById(fakeId) }
     verify(exactly = 1) { customerRepository.delete(fakeCustomer) }
   }
-
-
   companion object {
     fun buildCustomer(
-      firstName: String = "Cami",
-      lastName: String = "Cavalcante",
+      firstName: String = "Enoque",
+      lastName: String = "Neres",
       cpf: String = "28475934625",
-      email: String = "camila@gmail.com",
+      email: String = "neres@gmail.com",
       password: String = "12345",
       zipCode: String = "12345",
-      street: String = "Rua da Cami",
+      street: String = "Rua B",
       income: BigDecimal = BigDecimal.valueOf(1000.0),
       id: Long = 1L
     ) = Customer(
