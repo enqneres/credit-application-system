@@ -28,14 +28,58 @@
 </p>
 </figure>
 
-<h3>Instrução de Uso</h3>
-<p>No terminal/console:</p>
-<ol>
-	<li>Faça um clone do projeto na sua máquina: <code>git clone git@github.com:enqneres/credit-application-system.git</code></li>
-	<li>Entre na pasta raiz do projeto: <code>cd </code></li> 
-	<li>Execute o comando: <code>./gradlew bootrun</code></li>
-</ol>
+✅ 1. Descrição do Projeto
+
+API REST desenvolvida em Kotlin com Spring Boot para gerenciamento de clientes e créditos financeiros. Permite criar, consultar, atualizar e deletar clientes, além de registrar e buscar créditos vinculados a cada cliente.
+
+🚀 2. Como rodar o projeto localmente
+
+#### Clonar o repositório
+<li>git clone https://github.com/enqneres/credit-application-system.git
+
+#### Abrir no IntelliJ e rodar a aplicação
+<li>Execute o comando: <code>./gradlew bootrun</code></li>
+
 <h6>** Visando facilitar a demostração da aplicação, recomendo instalar apenas o IntelliJ IDEA e executar o projeto através da IDE **</h6>
+
+🔧 3. Endpoints disponíveis
+
+#### 📍 Clientes (`/api/customers`)
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| `POST` | `/api/customers` | Cria um novo cliente |
+| `GET` | `/api/customers/{id}` | Busca cliente por ID |
+| `PATCH` | `/api/customers?customerId={id}` | Atualiza dados do cliente |
+| `DELETE` | `/api/customers/{id}` | Deleta cliente |
+
+#### 📍 Créditos (`/api/credits`)
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| `POST` | `/api/credits` | Cria um novo crédito para um cliente |
+| `GET` | `/api/credits?customerId={id}` | Lista todos os créditos de um cliente |
+| `GET` | `/api/credits/{creditCode}?customerId={id}` | Busca um crédito específico por código |
+
+
+🧪 4. Exemplos de requisição
+
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+📚 5. Tecnologias utilizadas
+- Kotlin
+- Spring Boot
+- Gradle
+- JPA / Hibernate
+- Banco de dados H2
+
+👤 6. Autor
+
+Desenvolvido por [Enoque Neres]()
+
+---
 
 <h3>Referências</h3>
 
